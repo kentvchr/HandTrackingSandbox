@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0044FB862B8C005800BBD832 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 0044FB852B8C005800BBD832 /* RealityKitContent */; };
+		0044FB882B8C005800BBD832 /* HandTrackingSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044FB872B8C005800BBD832 /* HandTrackingSandboxApp.swift */; };
+		0044FB8A2B8C005800BBD832 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044FB892B8C005800BBD832 /* ContentView.swift */; };
+		0044FB8C2B8C005800BBD832 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044FB8B2B8C005800BBD832 /* ImmersiveView.swift */; };
+		0044FB902B8C005A00BBD832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0044FB8F2B8C005A00BBD832 /* Assets.xcassets */; };
+		0044FB932B8C005A00BBD832 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0044FB922B8C005A00BBD832 /* Preview Assets.xcassets */; };
+		0044FB9B2B8C00CB00BBD832 /* HandTrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044FB9A2B8C00CB00BBD832 /* HandTrackingModel.swift */; };
+		0048F1962B9035450037600B /* ModelEntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048F1952B9035450037600B /* ModelEntityExtension.swift */; };
+		0048F1982B903BAB0037600B /* AppState+EntityManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048F1972B903BAB0037600B /* AppState+EntityManagement.swift */; };
+		00780FB62BB4FC72002D3A6B /* SceneReconstructionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00780FB52BB4FC72002D3A6B /* SceneReconstructionModel.swift */; };
+		0087749C2BC787C5005DACD8 /* VirtualWorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087749B2BC787C5005DACD8 /* VirtualWorldModel.swift */; };
+		008D62922BC0E9D6006356FE /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D62912BC0E9D6006356FE /* UIColorExtension.swift */; };
+		00AA53802B9E6AAA00979667 /* HandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA537F2B9E6AAA00979667 /* HandModel.swift */; };
+		00AA53822B9E6AE300979667 /* SIMD4Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA53812B9E6AE300979667 /* SIMD4Extension.swift */; };
+		00AA53842B9E6B0B00979667 /* HandAnchorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA53832B9E6B0B00979667 /* HandAnchorExtension.swift */; };
+		00CB249F2B8C08BE00DE2D56 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB249E2B8C08BE00DE2D56 /* AppState.swift */; };
+		00CB24A12B8C0EC100DE2D56 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB24A02B8C0EC100DE2D56 /* SettingsView.swift */; };
+		00CB24A52B8C160100DE2D56 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB24A42B8C160100DE2D56 /* HomeView.swift */; };
+		00CB24A72B8C165900DE2D56 /* AppPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB24A62B8C165900DE2D56 /* AppPhase.swift */; };
+		00D61A4F2B93AFC70066F643 /* HandToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D61A4E2B93AFC70066F643 /* HandToggleStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0044FB802B8C005800BBD832 /* HandTrackingSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandTrackingSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0044FB842B8C005800BBD832 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		0044FB872B8C005800BBD832 /* HandTrackingSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingSandboxApp.swift; sourceTree = "<group>"; };
+		0044FB892B8C005800BBD832 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0044FB8B2B8C005800BBD832 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		0044FB8F2B8C005A00BBD832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0044FB922B8C005A00BBD832 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0044FB942B8C005A00BBD832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0044FB9A2B8C00CB00BBD832 /* HandTrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingModel.swift; sourceTree = "<group>"; };
+		0048F1952B9035450037600B /* ModelEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEntityExtension.swift; sourceTree = "<group>"; };
+		0048F1972B903BAB0037600B /* AppState+EntityManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+EntityManagement.swift"; sourceTree = "<group>"; };
+		00780FB52BB4FC72002D3A6B /* SceneReconstructionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneReconstructionModel.swift; sourceTree = "<group>"; };
+		0087749B2BC787C5005DACD8 /* VirtualWorldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualWorldModel.swift; sourceTree = "<group>"; };
+		008D62912BC0E9D6006356FE /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		00AA537F2B9E6AAA00979667 /* HandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandModel.swift; sourceTree = "<group>"; };
+		00AA53812B9E6AE300979667 /* SIMD4Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMD4Extension.swift; sourceTree = "<group>"; };
+		00AA53832B9E6B0B00979667 /* HandAnchorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandAnchorExtension.swift; sourceTree = "<group>"; };
+		00CB249E2B8C08BE00DE2D56 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		00CB24A02B8C0EC100DE2D56 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		00CB24A42B8C160100DE2D56 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00CB24A62B8C165900DE2D56 /* AppPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPhase.swift; sourceTree = "<group>"; };
+		00D61A4E2B93AFC70066F643 /* HandToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandToggleStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0044FB7D2B8C005800BBD832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0044FB862B8C005800BBD832 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0044FB772B8C005800BBD832 = {
+			isa = PBXGroup;
+			children = (
+				0044FB822B8C005800BBD832 /* HandTrackingSandbox */,
+				0044FB832B8C005800BBD832 /* Packages */,
+				0044FB812B8C005800BBD832 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0044FB812B8C005800BBD832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0044FB802B8C005800BBD832 /* HandTrackingSandbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0044FB822B8C005800BBD832 /* HandTrackingSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				0044FB872B8C005800BBD832 /* HandTrackingSandboxApp.swift */,
+				0048F1922B9034DB0037600B /* State */,
+				0048F1902B9034860037600B /* View */,
+				0048F1912B9034CA0037600B /* Data */,
+				0048F1932B9035310037600B /* Utils */,
+				0044FB8F2B8C005A00BBD832 /* Assets.xcassets */,
+				0044FB942B8C005A00BBD832 /* Info.plist */,
+				0044FB912B8C005A00BBD832 /* Preview Content */,
+			);
+			path = HandTrackingSandbox;
+			sourceTree = "<group>";
+		};
+		0044FB832B8C005800BBD832 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0044FB842B8C005800BBD832 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		0044FB912B8C005A00BBD832 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0044FB922B8C005A00BBD832 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0048F1902B9034860037600B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				008774C12BC8CFEC005DACD8 /* Window */,
+				008774C22BC8CFF6005DACD8 /* Immersive */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0048F1912B9034CA0037600B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				00780FB72BB4FC7A002D3A6B /* HandTracking */,
+				009763D92BC6EF6C004EB158 /* SceneReconstruction */,
+				0087749A2BC78797005DACD8 /* VirtualReality */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0048F1922B9034DB0037600B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				00CB249E2B8C08BE00DE2D56 /* AppState.swift */,
+				00CB24A62B8C165900DE2D56 /* AppPhase.swift */,
+				0048F1972B903BAB0037600B /* AppState+EntityManagement.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		0048F1932B9035310037600B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00D61A4D2B93AFB10066F643 /* Styles */,
+				0048F1942B9035360037600B /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0048F1942B9035360037600B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0048F1952B9035450037600B /* ModelEntityExtension.swift */,
+				00AA53812B9E6AE300979667 /* SIMD4Extension.swift */,
+				00AA53832B9E6B0B00979667 /* HandAnchorExtension.swift */,
+				008D62912BC0E9D6006356FE /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		00780FB72BB4FC7A002D3A6B /* HandTracking */ = {
+			isa = PBXGroup;
+			children = (
+				0044FB9A2B8C00CB00BBD832 /* HandTrackingModel.swift */,
+				00AA537F2B9E6AAA00979667 /* HandModel.swift */,
+			);
+			path = HandTracking;
+			sourceTree = "<group>";
+		};
+		0087749A2BC78797005DACD8 /* VirtualReality */ = {
+			isa = PBXGroup;
+			children = (
+				0087749B2BC787C5005DACD8 /* VirtualWorldModel.swift */,
+			);
+			path = VirtualReality;
+			sourceTree = "<group>";
+		};
+		008774C12BC8CFEC005DACD8 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				0044FB892B8C005800BBD832 /* ContentView.swift */,
+				00CB24A42B8C160100DE2D56 /* HomeView.swift */,
+				00CB24A02B8C0EC100DE2D56 /* SettingsView.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		008774C22BC8CFF6005DACD8 /* Immersive */ = {
+			isa = PBXGroup;
+			children = (
+				0044FB8B2B8C005800BBD832 /* ImmersiveView.swift */,
+			);
+			path = Immersive;
+			sourceTree = "<group>";
+		};
+		009763D92BC6EF6C004EB158 /* SceneReconstruction */ = {
+			isa = PBXGroup;
+			children = (
+				00780FB52BB4FC72002D3A6B /* SceneReconstructionModel.swift */,
+			);
+			path = SceneReconstruction;
+			sourceTree = "<group>";
+		};
+		00D61A4D2B93AFB10066F643 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				00D61A4E2B93AFC70066F643 /* HandToggleStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0044FB7F2B8C005800BBD832 /* HandTrackingSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0044FB972B8C005A00BBD832 /* Build configuration list for PBXNativeTarget "HandTrackingSandbox" */;
+			buildPhases = (
+				0044FB7C2B8C005800BBD832 /* Sources */,
+				0044FB7D2B8C005800BBD832 /* Frameworks */,
+				0044FB7E2B8C005800BBD832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandTrackingSandbox;
+			packageProductDependencies = (
+				0044FB852B8C005800BBD832 /* RealityKitContent */,
+			);
+			productName = HandTrackingSandbox;
+			productReference = 0044FB802B8C005800BBD832 /* HandTrackingSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0044FB782B8C005800BBD832 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0044FB7F2B8C005800BBD832 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 0044FB7B2B8C005800BBD832 /* Build configuration list for PBXProject "HandTrackingSandbox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0044FB772B8C005800BBD832;
+			productRefGroup = 0044FB812B8C005800BBD832 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0044FB7F2B8C005800BBD832 /* HandTrackingSandbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0044FB7E2B8C005800BBD832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0044FB902B8C005A00BBD832 /* Assets.xcassets in Resources */,
+				0044FB932B8C005A00BBD832 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0044FB7C2B8C005800BBD832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CB24A52B8C160100DE2D56 /* HomeView.swift in Sources */,
+				0048F1982B903BAB0037600B /* AppState+EntityManagement.swift in Sources */,
+				00CB24A72B8C165900DE2D56 /* AppPhase.swift in Sources */,
+				008D62922BC0E9D6006356FE /* UIColorExtension.swift in Sources */,
+				00AA53802B9E6AAA00979667 /* HandModel.swift in Sources */,
+				00CB24A12B8C0EC100DE2D56 /* SettingsView.swift in Sources */,
+				0044FB8A2B8C005800BBD832 /* ContentView.swift in Sources */,
+				00AA53842B9E6B0B00979667 /* HandAnchorExtension.swift in Sources */,
+				0044FB9B2B8C00CB00BBD832 /* HandTrackingModel.swift in Sources */,
+				00D61A4F2B93AFC70066F643 /* HandToggleStyle.swift in Sources */,
+				0044FB882B8C005800BBD832 /* HandTrackingSandboxApp.swift in Sources */,
+				00780FB62BB4FC72002D3A6B /* SceneReconstructionModel.swift in Sources */,
+				0048F1962B9035450037600B /* ModelEntityExtension.swift in Sources */,
+				0087749C2BC787C5005DACD8 /* VirtualWorldModel.swift in Sources */,
+				00CB249F2B8C08BE00DE2D56 /* AppState.swift in Sources */,
+				0044FB8C2B8C005800BBD832 /* ImmersiveView.swift in Sources */,
+				00AA53822B9E6AE300979667 /* SIMD4Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0044FB952B8C005A00BBD832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		0044FB962B8C005A00BBD832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		0044FB982B8C005A00BBD832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HandTrackingSandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = M8JFQ64CMA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HandTracking Sandbox";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kent.HandTrackingSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		0044FB992B8C005A00BBD832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HandTrackingSandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = M8JFQ64CMA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HandTracking Sandbox";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kent.HandTrackingSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0044FB7B2B8C005800BBD832 /* Build configuration list for PBXProject "HandTrackingSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0044FB952B8C005A00BBD832 /* Debug */,
+				0044FB962B8C005A00BBD832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0044FB972B8C005A00BBD832 /* Build configuration list for PBXNativeTarget "HandTrackingSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0044FB982B8C005A00BBD832 /* Debug */,
+				0044FB992B8C005A00BBD832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0044FB852B8C005800BBD832 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0044FB782B8C005800BBD832 /* Project object */;
+}

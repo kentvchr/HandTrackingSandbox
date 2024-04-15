@@ -1,0 +1,192 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root" (
+    prepend apiSchemas = ["MaterialBindingAPI"]
+)
+{
+    reorder nameChildren = ["GridMaterial", "free_empty_room", "Old_Desk_04_Freepoly", "BB8_Animated", "Mew", "Floating", "FREE__Rubiks_cube_3D", "FREE__Rubiks_cube_3D_1", "FREE__Rubiks_cube_3D_2", "apple_vision_pro_ios16", "Luke"]
+    rel material:binding = None (
+        bindMaterialAs = "weakerThanDescendants"
+    )
+
+    def "GridMaterial" (
+        active = true
+        references = @Materials/GridMaterial.usda@
+    )
+    {
+        float3 xformOp:scale = (1, 1, 1)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Old_Desk_04_Freepoly" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 1.5707963, 0)
+        }
+        references = @Old_Desk_04-Freepoly.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.7071067, 0, 0.70710677, 0)
+        float3 xformOp:scale = (0.010999999, 0.010999999, 0.010999999)
+        float3 xformOp:translate = (0.05203888, -0.045705497, -0.854473)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (106.26749, 92.02528, 209.6447)
+                float radius = 104.82235
+                token shapeType = "Box"
+
+                def RealityKitStruct "pose"
+                {
+                    float3 position = (0, 45.657257, -0.000022888184)
+                }
+            }
+        }
+
+        def RealityKitComponent "RigidBody"
+        {
+            bool gravityEnabled = 0
+            uniform token info:id = "RealityKit.RigidBody"
+            token motionType = "Static"
+
+            def RealityKitStruct "massFrame"
+            {
+                def RealityKitStruct "m_pose"
+                {
+                }
+            }
+
+            def RealityKitStruct "material"
+            {
+                double staticFriction = 10
+            }
+        }
+
+        def RealityKitComponent "InputTarget"
+        {
+            uniform token info:id = "RealityKit.InputTarget"
+        }
+    }
+
+    def "BB8_Animated" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 0.6108652, 0)
+        }
+        references = @BB8_Animated.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.953717, 0, 0.3007058, 0)
+        float3 xformOp:scale = (0.005, 0.005, 0.005)
+        float3 xformOp:translate = (-0.74796116, 0.95467687, -1.1540166)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "apple_vision_pro_ios16" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 4.242748, 0)
+        }
+        references = @apple_vision_pro_ios16.usdz@
+    )
+    {
+        quatf xformOp:orient = (-0.52317965, 0, 0.8522223, 0)
+        float3 xformOp:scale = (0.012, 0.012, 0.012)
+        float3 xformOp:translate = (0.7807181, 1.0121356, -1.1502622)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Raichu" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0.6981317, 0.7853981, -0.087266445)
+        }
+        prepend references = @Raichu.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.86162734, 0.33137038, 0.34547946, -0.16862959)
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (-2.8211124, 1.5, -3.5730927)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Ramen" (
+        active = true
+        prepend references = @Ramen.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.001, 0.001, 0.001)
+        float3 xformOp:translate = (1.0164374, 0.96072316, -0.5757946)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Skeleton" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, -0.8726645, 0)
+        }
+        prepend references = @Skeleton.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.9063078, 0, -0.4226182, 0)
+        float3 xformOp:scale = (0.005, 0.005, 0.005)
+        float3 xformOp:translate = (3.1410336, -1.1920929e-7, -2.4829018)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Rubiks" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 0, 0.34906584)
+        }
+        prepend references = @Rubiks.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.9848077, 0, 0, 0.17364818)
+        float3 xformOp:scale = (0.001, 0.001, 0.001)
+        float3 xformOp:translate = (-2.4170642, 0.53697586, -3.5416622)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Rubiks_1" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (1.0471976, 3.1415927, 0)
+        }
+        prepend references = @Rubiks.usdz@
+    )
+    {
+        quatf xformOp:orient = (-3.785517e-8, -2.1855694e-8, 0.8660254, -0.5)
+        float3 xformOp:scale = (0.002, 0.002, 0.002)
+        float3 xformOp:translate = (-2.0982096, 1.238931, -4.556313)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Rubiks_2" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 39.989525, 0)
+        }
+        prepend references = @Rubiks.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.41286045, 0, 0.91079426, 0)
+        float3 xformOp:scale = (0.001, 0.001, 0.001)
+        float3 xformOp:translate = (-3.465361, 1.2801212, -3.192412)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+
